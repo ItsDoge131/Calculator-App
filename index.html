@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">🌙</button>
+        </div>
+        <div class="display">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="memory-display">
+            <span id="memory-indicator"></span>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator">/</button>
+                <button class="btn function scientific" id="sin">sin</button>
+            </div>
+            <div class="row">
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator">*</button>
+                <button class="btn function scientific" id="cos">cos</button>
+            </div>
+            <div class="row">
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator">-</button>
+                <button class="btn function scientific" id="tan">tan</button>
+            </div>
+            <div class="row">
+                <button class="btn number zero">0</button>
+                <button class="btn number">.</button>
+                <button class="btn operator">%</button>
+                <button class="btn operator">+</button>
+                <button class="btn function scientific" id="sqrt">√</button>
+            </div>
+            <div class="row">
+                <button class="btn function scientific" id="log">log</button>
+                <button class="btn function scientific" id="ln">ln</button>
+                <button class="btn function scientific" id="exp">exp</button>
+                <button class="btn function scientific" id="factorial">!</button>
+                <button class="btn memory" id="mc">MC</button>
+            </div>
+            <div class="row">
+                <button class="btn memory" id="mr">MR</button>
+                <button class="btn memory" id="m-plus">M+</button>
+                <button class="btn memory" id="m-minus">M-</button>
+                <button class="btn constant scientific" id="pi">π</button>
+                <button class="btn constant scientific" id="e">e</button>
+            </div>
+            <div class="row">
+                <button class="btn convert scientific" id="deg-rad">°↔rad</button>
+                <button class="btn function" id="history-btn">Hist</button>
+                <button class="btn clear">C</button>
+                <button class="btn operator scientific">(</button>
+                <button class="btn operator scientific">)</button>
+            </div>
+            <div class="row">
+                <button class="btn backspace">⌫</button>
+                <button class="btn operator scientific">^</button>
+                <button class="btn equals" style="flex: 2;">=</button>
+            </div>
+        </div>
+        <div class="history-panel" id="history-panel" style="display: none;">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
